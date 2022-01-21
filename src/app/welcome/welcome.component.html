@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 style="margin-top: 20px;"><b>Wellcome To Quiz App</b></h1>
+    <p><b>Point:-</b> This quiz contains total 9 questions, Each question hold 10 points </p>
+    <h1 class="bg-success text-center">Rules</h1>
+    <ol>
+        <li>Correct answer gives you 10 points </li>
+        <li>Incorrect answer gives you -10 points </li>
+        <li>You will have 60sec each question </li>
+        <li>Refresh the page will reset the quiz</li>
+    </ol>
+
+    <div>
+        <h1 class="text-center">Best of luck</h1>
+
+        <div class="form-group mb-3">
+           <label for="name" class="mb-2">Enter Name:</label>
+           <input #name type="text" id="name" class="form-control" style="width: 300px;" >
+        </div>
+
+        <a class="btn btn-success" routerLink="/question" (click)="startQuiz()" > Start Quiz!</a>
+    </div>
+</div>
